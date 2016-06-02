@@ -1,5 +1,6 @@
 /*
    Copyright (c) 2013, The Linux Foundation. All rights reserved.
+   Copyright (c) 2016, The Mokee OpenSource Project. All rights reserved.
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -73,6 +74,13 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.product.model", "SM-G900R4");
         property_set("ro.product.device", "klteusc");
         cdma_properties("0", "311580", "U.S. Cellular");
+    } else if (strstr(bootloader, "G900R6")) {
+        /* kltelra - Appalachian Wireless variant */
+        property_set("ro.build.fingerprint", "samsung/kltelra/kltelra:5.0.1/LRX22C/G900R6WWU2BOB3:user/release-keys");
+        property_set("ro.build.description", "kltelra-user 5.0.1 LRX22C G900R6WWU2BOB3 release-keys");
+        property_set("ro.product.model", "SM-G900R6");
+        property_set("ro.product.device", "kltelra");
+        cdma_properties("0", "310000", "Default");
     } else if (strstr(bootloader, "G900R7")) {
         /* klteacg - CSpire variant */
         property_set("ro.build.fingerprint", "samsung/klteacg/klteacg:5.0/LRX21T/G900R7WWU3BOH1:user/release-keys");
