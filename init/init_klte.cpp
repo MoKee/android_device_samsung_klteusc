@@ -59,15 +59,15 @@ void init_target_properties()
 
     if (bootloader.find("G900R4") == 0) {
         /* klteusc */
-        property_set("ro.build.fingerprint", "samsung/klteusc/klteusc:6.0.1/MMB29M/G900R4VXU2CPF2:user/release-keys");
-        property_set("ro.build.description", "klteusc-user 6.0.1 MMB29M G900R4VXU2CPF2 release-keys");
+        property_set("ro.build.fingerprint", "samsung/klteusc/klteusc:6.0.1/MMB29M/G900R4VXS2CQA1:user/release-keys");
+        property_set("ro.build.description", "klteusc-user 6.0.1 MMB29M G900R4VXS2CQA1 release-keys");
         property_set("ro.product.model", "SM-G900R4");
         property_set("ro.product.device", "klteusc");
         cdma_properties("0", "311580", "U.S. Cellular");
     } else if (bootloader.find("G900R7") == 0) {
         /* klteacg - CSpire variant */
-        property_set("ro.build.fingerprint", "samsung/klteacg/klteacg:5.0/LRX21T/G900R7WWU3BOH1:user/release-keys");
-        property_set("ro.build.description", "klteacg-user 5.0 LRX21T G900R7WWU3BOH1 release-keys");
+        property_set("ro.build.fingerprint", "samsung/klteacg/klteacg:6.0.1/MMB29M/G900R7WWU3CPL1:user/release-keys");
+        property_set("ro.build.description", "klteacg-user 6.0.1 MMB29M G900R7WWU3CPL1 release-keys");
         property_set("ro.product.model", "SM-G900R7");
         property_set("ro.product.device", "klteacg");
         cdma_properties("0", "310000", "Default");
